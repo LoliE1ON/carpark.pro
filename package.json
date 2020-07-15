@@ -17,7 +17,6 @@
     "@types/redux-thunk": "^2.1.0",
     "@typescript-eslint/parser": "^3.4.0",
     "axios": "^0.19.2",
-    "cross-env": "^7.0.2",
     "date-fns": "^2.14.0",
     "formik": "^2.1.4",
     "prettier": "^2.0.5",
@@ -35,19 +34,11 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "start": "cross-env EXTEND_ESLINT=true react-scripts start",
-    "build": "cross-env EXTEND_ESLINT=true react-scripts build"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
-    "extends": ["react-app", "shared-config"],
-    "overrides": [
-      {
-        "files": ["**/*.ts?(x)"],
-        "rules": {
-          "no-unused-vars": "warn"
-        }
-      }
-    ]
+    "extends": ["react-app"]
   },
   "browserslist": {
     "production": [
